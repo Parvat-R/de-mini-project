@@ -1,103 +1,66 @@
 {
   "datasets": [
     {
-      "name": "dataset1",
-      "displayName": "total_sales",
-      "queryLines": [
-        "SELECT * FROM workspace.gold.total_sales"
-      ],
-      "catalog": "workspace",
-      "schema": "views"
-    },
-    {
-      "name": "c65e6ab6",
-      "displayName": "profit_per_product",
-      "queryLines": [
-        "SELECT * FROM workspace.gold.profit_per_product"
-      ]
-    },
-    {
       "name": "9f1d7f68",
       "displayName": "average_bucket_size",
       "queryLines": [
-        "SELECT * FROM workspace.gold.average_bucket_size"
+        "SELECT * FROM workspace.views.average_bucket_size"
       ]
     },
     {
       "name": "f55afa13",
       "displayName": "out_of_stock",
       "queryLines": [
-        "SELECT * FROM workspace.gold.out_of_stock"
+        "SELECT * FROM workspace.views.out_of_stock"
       ]
     },
     {
       "name": "5f694266",
       "displayName": "profit_per_category",
       "queryLines": [
-        "SELECT * FROM workspace.gold.profit_per_category"
+        "SELECT * FROM workspace.views.profit_per_category"
       ]
     },
     {
       "name": "5ebe6887",
       "displayName": "return_rate",
       "queryLines": [
-        "SELECT * FROM workspace.gold.return_rate"
+        "SELECT * FROM workspace.views.return_rate"
       ]
     },
     {
       "name": "3cd7b634",
       "displayName": "returning_customer_per_store",
       "queryLines": [
-        "SELECT * FROM workspace.gold.returning_customer_per_store"
+        "SELECT * FROM workspace.views.returning_customer_per_store"
       ]
     },
     {
       "name": "ed81fa5c",
       "displayName": "store_performance",
       "queryLines": [
-        "SELECT * FROM workspace.gold.store_performance"
+        "SELECT * FROM workspace.views.store_performance"
       ]
     },
     {
       "name": "01a4bb9e",
       "displayName": "total_discount_impact",
       "queryLines": [
-        "SELECT * FROM workspace.gold.total_discount_impact"
+        "SELECT * FROM workspace.views.total_discount_impact"
       ]
     },
     {
       "name": "21d3e2d6",
       "displayName": "total_discount_per_store",
       "queryLines": [
-        "SELECT * FROM workspace.gold.total_discount_per_store"
-      ]
-    },
-    {
-      "name": "e57ba3a1",
-      "displayName": "total_returning_customers",
-      "queryLines": [
-        "SELECT * FROM workspace.gold.total_returning_customers"
-      ]
-    },
-    {
-      "name": "8f7f059a",
-      "displayName": "total_sales",
-      "queryLines": [
-        "SELECT * FROM workspace.gold.total_sales"
+        "SELECT * FROM workspace.views.total_discount_per_store"
       ]
     },
     {
       "name": "4aa2544a",
       "displayName": "slow_moving_inventory",
       "queryLines": [
-        "SELECT * FROM workspace.gold.slow_moving_inventory"
-      ]
-    },
-    {
-      "name": "84e570f8",
-      "displayName": "average_bucket_size",
-      "queryLines": [
-        "SELECT * FROM workspace.views.average_bucket_size"
+        "SELECT * FROM workspace.views.slow_moving_inventory"
       ]
     },
     {
@@ -108,75 +71,10 @@
       ]
     },
     {
-      "name": "4eeb991d",
-      "displayName": "out_of_stock",
-      "queryLines": [
-        "SELECT * FROM workspace.views.out_of_stock"
-      ]
-    },
-    {
       "name": "244b15fb",
       "displayName": "profit_per_product",
       "queryLines": [
         "SELECT * FROM workspace.views.profit_per_product"
-      ]
-    },
-    {
-      "name": "6ae49e86",
-      "displayName": "slow_moving_inventory",
-      "queryLines": [
-        "SELECT * FROM workspace.views.slow_moving_inventory"
-      ]
-    },
-    {
-      "name": "d7c75c1d",
-      "displayName": "profit_per_category",
-      "queryLines": [
-        "SELECT * FROM workspace.views.profit_per_category"
-      ],
-      "catalog": "workspace",
-      "schema": "views"
-    },
-    {
-      "name": "cd981a99",
-      "displayName": "return_rate",
-      "queryLines": [
-        "SELECT * FROM workspace.views.return_rate"
-      ]
-    },
-    {
-      "name": "ce0448c1",
-      "displayName": "returning_customer_per_store",
-      "queryLines": [
-        "SELECT * FROM workspace.views.returning_customer_per_store"
-      ]
-    },
-    {
-      "name": "b9ca3ca4",
-      "displayName": "store_performance",
-      "queryLines": [
-        "SELECT * FROM workspace.views.store_performance"
-      ]
-    },
-    {
-      "name": "081d6591",
-      "displayName": "total_discount_impact",
-      "queryLines": [
-        "SELECT * FROM workspace.views.total_discount_impact"
-      ]
-    },
-    {
-      "name": "3cbe4caf",
-      "displayName": "total_discount_per_store",
-      "queryLines": [
-        "SELECT * FROM workspace.views.total_discount_per_store"
-      ]
-    },
-    {
-      "name": "f0a5868b",
-      "displayName": "total_returning_customers",
-      "queryLines": [
-        "SELECT * FROM workspace.views.total_returning_customers"
       ]
     }
   ],
@@ -220,7 +118,7 @@
           },
           "position": {
             "x": 1,
-            "y": 0,
+            "y": 2,
             "width": 3,
             "height": 3
           }
@@ -320,7 +218,7 @@
           },
           "position": {
             "x": 2,
-            "y": 3,
+            "y": 5,
             "width": 8,
             "height": 8
           }
@@ -359,7 +257,7 @@
           },
           "position": {
             "x": 9,
-            "y": 0,
+            "y": 2,
             "width": 2,
             "height": 3
           }
@@ -399,7 +297,7 @@
           },
           "position": {
             "x": 4,
-            "y": 0,
+            "y": 2,
             "width": 2,
             "height": 3
           }
@@ -482,7 +380,7 @@
           },
           "position": {
             "x": 0,
-            "y": 11,
+            "y": 13,
             "width": 5,
             "height": 6
           }
@@ -547,7 +445,7 @@
           },
           "position": {
             "x": 5,
-            "y": 11,
+            "y": 13,
             "width": 7,
             "height": 3
           }
@@ -613,7 +511,7 @@
           },
           "position": {
             "x": 6,
-            "y": 23,
+            "y": 25,
             "width": 6,
             "height": 6
           }
@@ -669,7 +567,7 @@
           },
           "position": {
             "x": 0,
-            "y": 23,
+            "y": 25,
             "width": 6,
             "height": 6
           }
@@ -709,7 +607,7 @@
           },
           "position": {
             "x": 6,
-            "y": 0,
+            "y": 2,
             "width": 3,
             "height": 3
           }
@@ -764,7 +662,7 @@
           },
           "position": {
             "x": 5,
-            "y": 14,
+            "y": 16,
             "width": 7,
             "height": 3
           }
@@ -862,9 +760,25 @@
           },
           "position": {
             "x": 2,
-            "y": 17,
+            "y": 19,
             "width": 8,
             "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "b78883aa",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"text-align:center;display:block\"><span style=\"font-size:60px;line-height:1.5\">Retail And Sales Analysis</span></span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
           }
         }
       ],
