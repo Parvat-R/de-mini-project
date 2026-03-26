@@ -1,0 +1,911 @@
+{
+  "datasets": [
+    {
+      "name": "dataset1",
+      "displayName": "total_sales",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.total_sales"
+      ],
+      "catalog": "workspace",
+      "schema": "views"
+    },
+    {
+      "name": "c65e6ab6",
+      "displayName": "profit_per_product",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.profit_per_product"
+      ]
+    },
+    {
+      "name": "9f1d7f68",
+      "displayName": "average_bucket_size",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.average_bucket_size"
+      ]
+    },
+    {
+      "name": "f55afa13",
+      "displayName": "out_of_stock",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.out_of_stock"
+      ]
+    },
+    {
+      "name": "5f694266",
+      "displayName": "profit_per_category",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.profit_per_category"
+      ]
+    },
+    {
+      "name": "5ebe6887",
+      "displayName": "return_rate",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.return_rate"
+      ]
+    },
+    {
+      "name": "3cd7b634",
+      "displayName": "returning_customer_per_store",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.returning_customer_per_store"
+      ]
+    },
+    {
+      "name": "ed81fa5c",
+      "displayName": "store_performance",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.store_performance"
+      ]
+    },
+    {
+      "name": "01a4bb9e",
+      "displayName": "total_discount_impact",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.total_discount_impact"
+      ]
+    },
+    {
+      "name": "21d3e2d6",
+      "displayName": "total_discount_per_store",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.total_discount_per_store"
+      ]
+    },
+    {
+      "name": "e57ba3a1",
+      "displayName": "total_returning_customers",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.total_returning_customers"
+      ]
+    },
+    {
+      "name": "8f7f059a",
+      "displayName": "total_sales",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.total_sales"
+      ]
+    },
+    {
+      "name": "4aa2544a",
+      "displayName": "slow_moving_inventory",
+      "queryLines": [
+        "SELECT * FROM workspace.gold.slow_moving_inventory"
+      ]
+    },
+    {
+      "name": "84e570f8",
+      "displayName": "average_bucket_size",
+      "queryLines": [
+        "SELECT * FROM workspace.views.average_bucket_size"
+      ]
+    },
+    {
+      "name": "b261ca09",
+      "displayName": "total_sales",
+      "queryLines": [
+        "SELECT * FROM workspace.views.total_sales"
+      ]
+    },
+    {
+      "name": "4eeb991d",
+      "displayName": "out_of_stock",
+      "queryLines": [
+        "SELECT * FROM workspace.views.out_of_stock"
+      ]
+    },
+    {
+      "name": "244b15fb",
+      "displayName": "profit_per_product",
+      "queryLines": [
+        "SELECT * FROM workspace.views.profit_per_product"
+      ]
+    },
+    {
+      "name": "6ae49e86",
+      "displayName": "slow_moving_inventory",
+      "queryLines": [
+        "SELECT * FROM workspace.views.slow_moving_inventory"
+      ]
+    },
+    {
+      "name": "d7c75c1d",
+      "displayName": "profit_per_category",
+      "queryLines": [
+        "SELECT * FROM workspace.views.profit_per_category"
+      ],
+      "catalog": "workspace",
+      "schema": "views"
+    },
+    {
+      "name": "cd981a99",
+      "displayName": "return_rate",
+      "queryLines": [
+        "SELECT * FROM workspace.views.return_rate"
+      ]
+    },
+    {
+      "name": "ce0448c1",
+      "displayName": "returning_customer_per_store",
+      "queryLines": [
+        "SELECT * FROM workspace.views.returning_customer_per_store"
+      ]
+    },
+    {
+      "name": "b9ca3ca4",
+      "displayName": "store_performance",
+      "queryLines": [
+        "SELECT * FROM workspace.views.store_performance"
+      ]
+    },
+    {
+      "name": "081d6591",
+      "displayName": "total_discount_impact",
+      "queryLines": [
+        "SELECT * FROM workspace.views.total_discount_impact"
+      ]
+    },
+    {
+      "name": "3cbe4caf",
+      "displayName": "total_discount_per_store",
+      "queryLines": [
+        "SELECT * FROM workspace.views.total_discount_per_store"
+      ]
+    },
+    {
+      "name": "f0a5868b",
+      "displayName": "total_returning_customers",
+      "queryLines": [
+        "SELECT * FROM workspace.views.total_returning_customers"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "page1",
+      "displayName": "DE Mini Project Dashboard",
+      "layout": [
+        {
+          "widget": {
+            "name": "table1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "b261ca09",
+                  "fields": [
+                    {
+                      "name": "total_sales",
+                      "expression": "`total_sales`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Sales - KPI 1",
+                "showDescription": false
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "total_sales"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 1,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-2",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "244b15fb",
+                  "fields": [
+                    {
+                      "name": "median(total_profit)",
+                      "expression": "MEDIAN(`total_profit`)"
+                    },
+                    {
+                      "name": "product_name",
+                      "expression": "`product_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Profit Per Product - KPI 2"
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "fontColor"
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "median(total_profit)",
+                  "displayName": "Profit Generated",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "product_name",
+                  "displayName": "Product Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 3,
+            "width": 8,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-4",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9f1d7f68",
+                  "fields": [
+                    {
+                      "name": "bucket_size",
+                      "expression": "`bucket_size`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Average Bucket Size - KPI 4"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "bucket_size"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 0,
+            "width": 2,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-5",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "5ebe6887",
+                  "fields": [
+                    {
+                      "name": "sum(return_rate)",
+                      "expression": "SUM(`return_rate`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Return Rate - KPI 5"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(return_rate)",
+                  "displayName": "Return Rate"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 0,
+            "width": 2,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-3",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "5f694266",
+                  "fields": [
+                    {
+                      "name": "total_profit",
+                      "expression": "`total_profit`"
+                    },
+                    {
+                      "name": "category_type",
+                      "expression": "`category_type`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Profit Per Category KPI 3"
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "total_profit",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "axis": {
+                    "hideTitle": false
+                  },
+                  "displayName": "Total Profit"
+                },
+                "color": {
+                  "fieldName": "category_type",
+                  "legend": {
+                    "title": "Profit Generated"
+                  },
+                  "displayName": "Category",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Electronics",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 5
+                        }
+                      },
+                      {
+                        "value": "Accessories",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 6
+                        }
+                      },
+                      {
+                        "value": "Lifestyle",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 11,
+            "width": 5,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "out-of-stock-kpi-6",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f55afa13",
+                  "fields": [
+                    {
+                      "name": "product_id",
+                      "expression": "`product_id`"
+                    },
+                    {
+                      "name": "product_name",
+                      "expression": "`product_name`"
+                    },
+                    {
+                      "name": "store_id",
+                      "expression": "`store_id`"
+                    },
+                    {
+                      "name": "store_name",
+                      "expression": "`store_name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Out Of Stock - KPI 6"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "product_id",
+                    "displayName": "Product Id"
+                  },
+                  {
+                    "fieldName": "product_name",
+                    "displayName": "Product Name"
+                  },
+                  {
+                    "fieldName": "store_id"
+                  },
+                  {
+                    "fieldName": "store_name",
+                    "displayName": "Store Name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 5,
+            "y": 11,
+            "width": 7,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "store-average-daily-performance-kpi-7",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ed81fa5c",
+                  "fields": [
+                    {
+                      "name": "countdistinct(store_id)",
+                      "expression": "COUNT(DISTINCT `store_id`)"
+                    },
+                    {
+                      "name": "sum(daily_volume)",
+                      "expression": "SUM(`daily_volume`)"
+                    },
+                    {
+                      "name": "store_name",
+                      "expression": "`store_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Store Average Daily Performance - KPI 7"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(daily_volume)",
+                  "displayName": "Daily Volume",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "store_name",
+                  "displayName": "Store Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                },
+                "extra": [
+                  {
+                    "fieldName": "countdistinct(store_id)"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 23,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "returning-customers-kpi-9",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3cd7b634",
+                  "fields": [
+                    {
+                      "name": "sum(returning_customers)",
+                      "expression": "SUM(`returning_customers`)"
+                    },
+                    {
+                      "name": "store_name",
+                      "expression": "`store_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Returning Customers - KPI 9"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(returning_customers)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "store_name",
+                  "displayName": "Store names",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 23,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "net-discount-kpi-8",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "01a4bb9e",
+                  "fields": [
+                    {
+                      "name": "total_discount",
+                      "expression": "`total_discount`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Net Discount - KPI 8"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "total_discount",
+                  "displayName": "Total Discount"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "no-sale-last-60-days-kpi-10",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4aa2544a",
+                  "fields": [
+                    {
+                      "name": "product_id",
+                      "expression": "`product_id`"
+                    },
+                    {
+                      "name": "product_name",
+                      "expression": "`product_name`"
+                    },
+                    {
+                      "name": "category",
+                      "expression": "`category`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "No Sales For Last 60 Days - KPI 10"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "product_id"
+                  },
+                  {
+                    "fieldName": "product_name"
+                  },
+                  {
+                    "fieldName": "category"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 5,
+            "y": 14,
+            "width": 7,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "discount-per-store",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "21d3e2d6",
+                  "fields": [
+                    {
+                      "name": "sum(sum(discounted_amount))",
+                      "expression": "SUM(`sum(discounted_amount)`)"
+                    },
+                    {
+                      "name": "store_name",
+                      "expression": "`store_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Discount Per Store"
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(sum(discounted_amount))",
+                  "displayName": "Discounted Amount Total",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "store_name",
+                  "displayName": "Store Name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 17,
+            "width": 8,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "a8fe9dd7",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "a44938fe",
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": false
+              },
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": []
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
