@@ -4,77 +4,77 @@
       "name": "9f1d7f68",
       "displayName": "average_bucket_size",
       "queryLines": [
-        "SELECT * FROM workspace.views.average_bucket_size"
+        "SELECT * FROM workspace.gold.average_bucket_size"
       ]
     },
     {
       "name": "f55afa13",
       "displayName": "out_of_stock",
       "queryLines": [
-        "SELECT * FROM workspace.views.out_of_stock"
+        "SELECT * FROM workspace.gold.out_of_stock"
       ]
     },
     {
       "name": "5f694266",
       "displayName": "profit_per_category",
       "queryLines": [
-        "SELECT * FROM workspace.views.profit_per_category"
+        "SELECT * FROM workspace.gold.profit_per_category"
       ]
     },
     {
       "name": "5ebe6887",
       "displayName": "return_rate",
       "queryLines": [
-        "SELECT * FROM workspace.views.return_rate"
+        "SELECT * FROM workspace.gold.return_rate"
       ]
     },
     {
       "name": "3cd7b634",
       "displayName": "returning_customer_per_store",
       "queryLines": [
-        "SELECT * FROM workspace.views.returning_customer_per_store"
+        "SELECT * FROM workspace.gold.returning_customer_per_store"
       ]
     },
     {
       "name": "ed81fa5c",
       "displayName": "store_performance",
       "queryLines": [
-        "SELECT * FROM workspace.views.store_performance"
+        "SELECT * FROM workspace.gold.store_performance"
       ]
     },
     {
       "name": "01a4bb9e",
       "displayName": "total_discount_impact",
       "queryLines": [
-        "SELECT * FROM workspace.views.total_discount_impact"
+        "SELECT * FROM workspace.gold.total_discount_impact"
       ]
     },
     {
       "name": "21d3e2d6",
       "displayName": "total_discount_per_store",
       "queryLines": [
-        "SELECT * FROM workspace.views.total_discount_per_store"
+        "SELECT * FROM workspace.gold.total_discount_per_store"
       ]
     },
     {
       "name": "4aa2544a",
       "displayName": "slow_moving_inventory",
       "queryLines": [
-        "SELECT * FROM workspace.views.slow_moving_inventory"
+        "SELECT * FROM workspace.gold.slow_moving_inventory"
       ]
     },
     {
       "name": "b261ca09",
       "displayName": "total_sales",
       "queryLines": [
-        "SELECT * FROM workspace.views.total_sales"
+        "SELECT * FROM workspace.gold.total_sales"
       ]
     },
     {
       "name": "244b15fb",
       "displayName": "profit_per_product",
       "queryLines": [
-        "SELECT * FROM workspace.views.profit_per_product"
+        "SELECT * FROM workspace.gold.profit_per_product"
       ]
     }
   ],
