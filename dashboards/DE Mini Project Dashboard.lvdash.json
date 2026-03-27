@@ -46,7 +46,8 @@
       "name": "01a4bb9e",
       "displayName": "total_discount_impact",
       "queryLines": [
-        "SELECT * FROM workspace.gold.total_discount_impact"
+        "SELECT * FROM workspace.gold.total_discount_impact\r\n",
+        "-- select * from workspace.data_mart.fact_sales"
       ]
     },
     {
@@ -133,6 +134,10 @@
                   "datasetName": "244b15fb",
                   "fields": [
                     {
+                      "name": "product_id",
+                      "expression": "`product_id`"
+                    },
+                    {
                       "name": "median(total_profit)",
                       "expression": "MEDIAN(`total_profit`)"
                     },
@@ -212,7 +217,12 @@
                 },
                 "label": {
                   "show": true
-                }
+                },
+                "extra": [
+                  {
+                    "fieldName": "product_id"
+                  }
+                ]
               }
             }
           },
@@ -754,6 +764,9 @@
                   "scale": {
                     "type": "categorical"
                   }
+                },
+                "label": {
+                  "show": true
                 }
               }
             }
