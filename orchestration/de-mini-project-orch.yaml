@@ -1,0 +1,53 @@
+resources:
+  jobs:
+    de_mini_project_orch:
+      name: de-mini-project-orch
+      trigger:
+        pause_status: UNPAUSED
+        file_arrival:
+          url: s3://bucket-retail-sales/raw_data/
+      tasks:
+        - task_key: data_injestion
+          notebook_task:
+            notebook_path: /Workspace/Users/vidyutparvat2@gmail.com/de-mini-project/bronze/nb_injestion
+            source: WORKSPACE
+          max_retries: 1
+          min_retry_interval_millis: 300000
+          retry_on_timeout: true
+          disable_auto_optimization: false
+          environment_key: Default
+        - task_key: clean_and_transform
+          depends_on:
+            - task_key: data_injestion
+          notebook_task:
+            notebook_path: /Workspace/Users/vidyutparvat2@gmail.com/de-mini-project/silver/nb_silver
+            source: WORKSPACE
+          environment_key: Default
+        - task_key: create_facts_and_dims
+          depends_on:
+            - task_key: clean_and_transform
+          notebook_task:
+            notebook_path: /Workspace/Users/vidyutparvat2@gmail.com/de-mini-project/gold/nb_data_mart
+            source: WORKSPACE
+        - task_key: create_kpi_views
+          depends_on:
+            - task_key: create_facts_and_dims
+          notebook_task:
+            notebook_path: /Workspace/Users/vidyutparvat2@gmail.com/de-mini-project/gold/nb_kpi
+            source: WORKSPACE
+        - task_key: refresh_dashboard
+          depends_on:
+            - task_key: create_kpi_views
+          dashboard_task:
+            subscription:
+              subscribers:
+                - user_name: vidyutparvat2@gmail.com
+            warehouse_id: ab79d468b6f403a2
+            dashboard_id: 01f128e0c72817b48b343f60787296b7
+      queue:
+        enabled: true
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "5"
+      performance_target: PERFORMANCE_OPTIMIZED
